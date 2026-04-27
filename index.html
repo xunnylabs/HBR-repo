@@ -21,10 +21,9 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="HBR Electro Mechanical Services home">
-          <img src="assets/hbr-logo.jpeg" alt="HBR Electro Mechanical Services logo">
+          <img src="assets/logo-transparent.png" alt="HBR Electro Mechanical Services logo">
           <div>
             <strong>HBR Electro Mechanical Services</strong>
-            <span>Cargo handling services and supplies</span>
           </div>
         </a>
 
@@ -35,7 +34,14 @@
 
         <nav class="site-nav" id="site-nav">
           <a class="active" href="index.html">Home</a>
-          <a href="services.html">Services</a>
+          <div class="nav-dropdown">
+            <a href="services.html">Services</a>
+            <div class="dropdown-menu">
+              <a href="services.html">Services</a>
+              <a href="accomplishments.html">Accomplishments</a>
+              <a href="gallery.html">Gallery</a>
+            </div>
+          </div>
           <a href="about.html">About Us</a>
           <a href="contact.html">Contact Us</a>
         </nav>
@@ -43,55 +49,39 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Precision in motion</p>
-            <h1>
-              Modern electro-mechanical support for
-              <span class="text-rotator" data-rotate='["cargo handling systems","industrial operations","site-critical equipment"]'>cargo handling systems</span>
-            </h1>
-            <p class="hero-text">
-              Based in Mariveles, Bataan, Philippines, HBR supports high-demand vessel, cargo, and industrial
-              operations with practical engineering, dependable maintenance, cargo handling manpower, and
-              responsive supply coordination.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="services.html">Explore Services</a>
-              <a class="button button-secondary" href="contact.html">Contact Our Team</a>
-            </div>
-            <div class="hero-metrics">
-              <article>
-                <strong>250+ insured workforce</strong>
-                <span>AXA-insured manpower and a growing team ready for site and cargo operations.</span>
-              </article>
-              <article>
-                <strong>Established 2021</strong>
-                <span>Built around professionalism, teamwork, and reliable execution in the field.</span>
-              </article>
-            </div>
-          </div>
+      <section class="hero hero-featured">
+        <div class="hero-stage reveal">
+            <img class="hero-stage-image" src="assets/home-hero.jpg" alt="HBR team performing electro-mechanical field work inside a vessel">
+            <div class="hero-stage-overlay"></div>
+            <div class="container hero-stage-content">
+              <div class="hero-copy">
+                <p class="eyebrow">Precision in motion</p>
+                <h1>
+                  Modern electro-mechanical support for
+                  <span class="text-rotator" data-rotate='["cargo handling systems","industrial operations","site-critical equipment"]'>cargo handling systems</span>
+                </h1>
+                <p class="hero-text">
+                  Based in Mariveles, Bataan, Philippines, HBR supports high-demand vessel, cargo, and industrial
+                  operations with practical engineering, dependable maintenance, cargo handling manpower, and
+                  responsive supply coordination.
+                </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="services.html">Explore Services</a>
+                <a class="button button-primary" href="contact.html">Contact Our Team</a>
+              </div>
+              </div>
 
-          <div class="hero-visual reveal reveal-delay-1">
-            <div class="orb orb-one"></div>
-            <div class="orb orb-two"></div>
-            <div class="signal-card signal-main">
-              <span>Operational Focus</span>
-              <strong>Reliable vessel, cargo handling, and electro-mechanical support with a professional delivery model.</strong>
+              <div class="hero-metrics">
+                <article>
+                  <strong>250+ insured workforce</strong>
+                  <span>AXA-insured manpower and a growing team ready for site and cargo operations.</span>
+                </article>
+                <article>
+                  <strong>Established 2021</strong>
+                  <span>Built around professionalism, teamwork, and reliable execution in the field.</span>
+                </article>
+              </div>
             </div>
-            <div class="signal-card signal-small floating-card">
-              <span>Service Areas</span>
-              <strong>Maintenance</strong>
-              <strong>Supplies</strong>
-              <strong>Installations</strong>
-            </div>
-            <div class="grid-panel">
-              <div class="grid-line"></div>
-              <div class="grid-line"></div>
-              <div class="grid-line"></div>
-              <div class="grid-line"></div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -99,22 +89,23 @@
         <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Overview</p>
-              <h2>Everything important is visible from the homepage</h2>
+              <h2>Integrated support for electro-mechanical, cargo handling, and field operations</h2>
               <p>
-                Visitors get a quick read on HBR’s core services, company background, operational scale, and
-                contact path without having to search for the essentials.
+                HBR Electro Mechanical Services delivers practical technical capability, a growing insured
+                workforce, and responsive client support for vessel, industrial, and cargo-related operations in
+                one dependable service company.
               </p>
             </div>
 
           <div class="summary-grid">
             <a class="summary-card reveal" href="services.html">
               <span class="card-tag">Services</span>
-              <h3>Core technical services</h3>
+              <h3>Reliable support built around operational needs</h3>
               <p>
-                Engine reconditioning, overhauling and repair, AC/DC motor rewinding, hydraulic flushing,
-                instrumentation, fabrication, hot works, and cargo handling support.
+                HBR provides responsive electro-mechanical, cargo handling, manpower, and supply support designed
+                to help clients keep operations moving with less downtime and stronger field coordination.
               </p>
-              <span class="card-link">View Services</span>
+              <span class="button button-primary card-button">Show More</span>
             </a>
 
             <a class="summary-card reveal reveal-delay-1" href="about.html">
@@ -124,17 +115,17 @@
                 A concise story backed by HBR’s mission, vision, growing workforce, workshop capability, and
                 teamwork-focused operating culture.
               </p>
-              <span class="card-link">Learn About HBR</span>
+              <span class="button button-primary card-button">Show More</span>
             </a>
 
-            <a class="summary-card reveal reveal-delay-2" href="contact.html">
-              <span class="card-tag">Contact</span>
-              <h3>Clear route to the next conversation</h3>
+            <a class="summary-card reveal reveal-delay-2" href="accomplishments.html">
+              <span class="card-tag">Accomplishments</span>
+              <h3>Completed work that reflects technical depth</h3>
               <p>
-                Clear contact points for projects, manpower requirements, maintenance support, vessel service
-                work, and supply inquiries.
+                Explore selected HBR accomplishments across vessel support, rewinding, fabrication,
+                troubleshooting, commissioning, and other field-proven execution over the years.
               </p>
-              <span class="card-link">Open Contact Page</span>
+              <span class="button button-primary card-button">Show More</span>
             </a>
           </div>
         </div>
@@ -196,13 +187,31 @@
       <section class="section">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Selected Reach</p>
+            <p class="eyebrow">Our Clients</p>
             <h2>Trusted across marine, shipyard, and industrial environments</h2>
             <p>
-              The profile highlights work and relationships connected to vessels, shipyards, logistics, and
-              industrial operators including YARA, Seafront Shipyard, Herma Shipyard, Herma Shipping, APO
-              Floors, and GN Power Dinginin.
+            
             </p>
+          </div>
+          <div class="selected-reach-grid reveal reveal-delay-1" aria-label="Selected reach organizations">
+            <article class="reach-logo-card">
+              <img src="assets/selected-reach/yara.png" alt="Yara logo" loading="lazy">
+            </article>
+            <article class="reach-logo-card reach-logo-card-text">
+              <span>Seafront Shipyard</span>
+            </article>
+            <article class="reach-logo-card">
+              <img src="assets/selected-reach/herma-shipyard.png" alt="Herma Shipyard logo" loading="lazy">
+            </article>
+            <article class="reach-logo-card">
+              <img src="assets/selected-reach/herma-shipping.png" alt="Herma Shipping logo" loading="lazy">
+            </article>
+            <article class="reach-logo-card">
+              <img src="assets/selected-reach/apo-floors.png" alt="APO Floors logo" loading="lazy">
+            </article>
+            <article class="reach-logo-card">
+              <img src="assets/selected-reach/gn-power-dinginin.png" alt="GN Power Dinginin logo" loading="lazy">
+            </article>
           </div>
         </div>
       </section>
@@ -245,18 +254,86 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-wrap">
-        <div>
-          <strong>HBR Electro Mechanical Services</strong>
-          <p>Electro Mechanical Services, Cargo Handling Services, and Supplies.</p>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-transparent.png" alt="HBR Electro Mechanical Services logo">
+          <div class="footer-socials">
+            <a class="social-icon" href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7h2.3l.4-3h-2.7V9.1c0-.9.3-1.5 1.6-1.5H16V5.1c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.9V11H8v3h2.1v7h3.4Z"/></svg>
+            </a>
+            <a class="social-icon" href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.7A1.8 1.8 0 1 0 6.5 5a1.8 1.8 0 0 0 0 3.7ZM5 19h3V10H5v9Zm4.8 0h3v-4.7c0-1.2.2-2.3 1.7-2.3s1.5 1.4 1.5 2.4V19h3v-5.3c0-2.6-.6-4.6-3.6-4.6-1.4 0-2.3.8-2.7 1.5h-.1V10h-2.8c.1.8 0 9 0 9Z"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="services.html">Services</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact Us</a>
+
+        <div class="footer-column">
+          <h3>About The Company</h3>
+          <p>
+            HBR Electro Mechanical Services supports vessel, cargo handling, and industrial operations through
+            dependable electro-mechanical services, manpower support, technical supplies, and practical field
+            execution.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="services.html">Services</a>
+            <a href="accomplishments.html">Accomplishments</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact Information</h3>
+          <div class="footer-contact">
+            <p>Near Gate 3, MAAP x MAAP Road, Alas Asin, Mariveles, Bataan</p>
+            <p><a href="tel:+639282670521">0928-267-0521</a></p>
+            <p><a href="tel:+639765545453">0976-554-5453</a></p>
+            <p><a href="mailto:contact@hbrservices.com">contact@hbrservices.com</a></p>
+          </div>
         </div>
       </div>
+
+      <div class="container footer-bottom">
+        <div class="footer-legal">
+          <button type="button" class="footer-legal-link" data-modal-open="privacy-modal">Privacy Policy</button>
+          <button type="button" class="footer-legal-link" data-modal-open="terms-modal">Terms of Service</button>
+        </div>
+        <p>HBR Electro Mechanical Services <span data-current-year></span>. All rights reserved.</p>
+      </div>
     </footer>
+
+    <div class="modal-backdrop" data-modal="privacy-modal" aria-hidden="true">
+      <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+        <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+        <h2 id="privacy-title">Privacy Policy</h2>
+        <div class="modal-body">
+          <p>HBR Electro Mechanical Services respects the privacy of every visitor, client, supplier, and business contact who interacts with this website.</p>
+          <p>Information submitted through the website, including names, email addresses, company details, phone numbers, and service inquiries, may be used only for responding to requests, evaluating business needs, preparing quotations, coordinating services, and maintaining professional communication with prospective or existing clients.</p>
+          <p>HBR does not sell personal information to third parties. Information may be shared only when reasonably necessary to support company operations, comply with legal obligations, protect company rights, or coordinate services with authorized representatives, contractors, or advisers.</p>
+          <p>While HBR takes reasonable steps to protect information submitted through the website, no online transmission or storage method can be guaranteed as completely secure. Visitors should avoid sending highly sensitive information unless necessary and appropriate.</p>
+          <p>This website may be updated from time to time. Continued use of the website after updates means acceptance of the current privacy terms. For questions regarding privacy-related matters, visitors may contact HBR through <a href="mailto:contact@hbrservices.com">contact@hbrservices.com</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" data-modal="terms-modal" aria-hidden="true">
+      <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+        <button class="modal-close" type="button" aria-label="Close" data-modal-close>&times;</button>
+        <h2 id="terms-title">Terms of Service</h2>
+        <div class="modal-body">
+          <p>This website is provided for general information about HBR Electro Mechanical Services, its capabilities, service offerings, and contact channels.</p>
+          <p>All website content, including text, graphics, branding, images, and layout elements, is provided for business presentation purposes only. Visitors may not reproduce, distribute, or commercially reuse website content without prior written permission from HBR, except where limited use is permitted by law.</p>
+          <p>Information on this website does not automatically create a contract, service agreement, partnership, or accreditation relationship. Any services, quotations, project scopes, schedules, and deliverables remain subject to formal discussion, evaluation, and written approval by HBR and the client.</p>
+          <p>HBR aims to keep website information accurate and current, but does not guarantee that all content will always be complete, error-free, or up to date. The company may revise, add, or remove content at any time without prior notice.</p>
+          <p>By using this website, visitors agree to use it lawfully and in a manner that does not interfere with the security, availability, or operation of the site. Questions regarding these terms may be directed to <a href="mailto:contact@hbrservices.com">contact@hbrservices.com</a>.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>

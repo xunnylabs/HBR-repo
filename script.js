@@ -55,3 +55,54 @@ if (rotator) {
     }, 2600);
   }
 }
+
+const yearTargets = document.querySelectorAll("[data-current-year]");
+
+yearTargets.forEach((target) => {
+  target.textContent = new Date().getFullYear();
+});
+
+const modalOpeners = document.querySelectorAll("[data-modal-open]");
+const modalClosers = document.querySelectorAll("[data-modal-close]");
+const modals = document.querySelectorAll(".modal-backdrop");
+
+const closeModal = (modal) => {
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+const openModal = (modal) => {
+  if (!modal) return;
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+};
+
+modalOpeners.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = document.querySelector(`[data-modal="${button.dataset.modalOpen}"]`);
+    openModal(modal);
+  });
+});
+
+modalClosers.forEach((button) => {
+  button.addEventListener("click", () => {
+    closeModal(button.closest(".modal-backdrop"));
+  });
+});
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    document.querySelectorAll(".modal-backdrop.is-open").forEach((modal) => closeModal(modal));
+  }
+});
