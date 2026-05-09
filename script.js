@@ -62,6 +62,15 @@ yearTargets.forEach((target) => {
   target.textContent = new Date().getFullYear();
 });
 
+const successBanner = document.querySelector("#form-success-banner");
+
+if (successBanner) {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("sent") === "1") {
+    successBanner.hidden = false;
+  }
+}
+
 const modalOpeners = document.querySelectorAll("[data-modal-open]");
 const modalClosers = document.querySelectorAll("[data-modal-close]");
 const modals = document.querySelectorAll(".modal-backdrop");
